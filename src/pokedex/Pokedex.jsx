@@ -17,7 +17,7 @@ function Pokedex( ) {
       <Search updateSearchTerm={setSearchTerm} />
 
       {/* ✅ As you type live update */}
-      {debouncedSearch.trim() === "" ? (
+      {debouncedSearch.length === 0 ? (
         <PokemonList />
       ) : (
         <PokemonDetails pokemonName={debouncedSearch.toLowerCase()} />
