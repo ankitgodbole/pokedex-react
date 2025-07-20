@@ -1,0 +1,82 @@
+.pokemon-list-wrapper {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.pokemon-list {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff4d4d;
+  margin-bottom: 20px;
+}
+
+.pokemon {
+ display: flex;
+  justify-items: center;
+  flex-wrap: wrap;
+  gap: 2rem; /* center each card */
+}
+
+.pokemon-card {
+  background: linear-gradient(145deg, #ffffff, #f8f9fa);
+  border-radius: 16px;
+  width: 160px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.pokemon-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.pokemon-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.pokemon-card .pokemon-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  text-transform: capitalize;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.prev-list,
+.next-list {
+  padding: 8px 16px;
+  background: #ff4d4d;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.prev-list:hover,
+.next-list:hover {
+  background: #e63e3e;
+  transform: translateY(-2px);
+}
+
+.prev-list:disabled,
+.next-list:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
